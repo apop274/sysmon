@@ -23,7 +23,7 @@ A lightweight Linux CLI system monitor + logger that prints CPU usage, RAM usage
 
   3. Run it (you can sto any time with Ctrl+C):
 
-     prints one line every 2 seconds until you stop it:
+     **prints one line every 2 seconds until you stop it:**
      python3 sysmon.py
 
      Print 10 updates then exit:
