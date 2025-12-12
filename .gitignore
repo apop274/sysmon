@@ -1,4 +1,12 @@
-.venv/
-stats.log
+# Editor backup files
 *.save
+
+# Virtual environments
+.venv/
+
+# Logs
+*.log
+
+# Python cache
 __pycache__/
+
