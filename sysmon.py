@@ -40,16 +40,16 @@ def cpu_percent() -> float:
     return round(100.0 - idle, 1)
 
 def mem_line() -> tuple[str, str]:
-    used = run)"free -h | awk '/Mem:/ {print $3}'")
-    total = run("free -h | awk '/Mem:/ {print $2}'")
+    used = run("free -h | awk '/Mem:/ {{print $3}}'")
+    total = run("free -h | awk '/Mem:/ {{print $2}}'")
     return used, total
 
 def memory_usage() -> tuple[str, str]:
     """
     Return used and total RAM in human-readable format.
     """
-    used = run("free -h | awk '/Mem:/ {print $3}'")
-    total = run("free -h | awk '/Mem:/ {print $2}'")
+    used = run("free -h | awk '/Mem:/ {{print $3}}'")
+    total = run("free -h | awk '/Mem:/ {{print $2}}'")
     return used, total
 
 
