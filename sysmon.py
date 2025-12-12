@@ -9,15 +9,15 @@ def run(cmd: str) -> str:
     return subprocess.check_output(cmd, shell=True, text=True).strip()
 
 def cpu_percent() -> float:
-    # uses top snapshot; good enough for a 1-day resume project
+    #snapshot
     out = run("LC_ALL=C top -bn1 | grep 'Cpu(s)'")
-    # Example: "Cpu(s):  2.0%us,  1.0%sy,  0.0%ni, 96.7%id, ..."
+    #example:: "Cpu(s):  2.0%us,  1.0%sy,  0.0%ni, 96.7%id, ..."
     parts = out.replace(",", "").split()
     idle = float(parts[parts.index("id") - 1].replace("%", ""))
     return round(100.0 - idle, 1)
 
 def mem_line() -> tuple[str, str]:
-    # returns (used, total) human-readable
+    
     used = run("free -h | awk '/Mem:/ {print $3}'")
     total = run("free -h | awk '/Mem:/ {print $2}'")
     return used, total
