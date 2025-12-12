@@ -3,7 +3,7 @@
 A lightweight Linux CLI system monitor + logger that prints CPU usage, RAM usage, and disk usage at a configurable interval.
 
 ## Features
-- Displays **CPU %, RAM used/total, Disk used/total**
+- Displays **CPU %, RAM used/total, Disk used/total
 - Configurable update interval
 - Optional logging to a file
 - Color output (can be disabled)
@@ -23,7 +23,7 @@ A lightweight Linux CLI system monitor + logger that prints CPU usage, RAM usage
 
   3. Run it (you can sto any time with Ctrl+C):
 
-     **Prints one line every 2 seconds until you stop it:**
+     __Prints one line every 2 seconds until you stop it:__
      python3 sysmon.py
 
      **Print 10 updates then exit:**
