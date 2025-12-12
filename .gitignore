@@ -1,0 +1,4 @@
+.venv/
+stats.log
+*.save
+__pycache__/
