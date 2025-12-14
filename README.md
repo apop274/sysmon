@@ -21,7 +21,7 @@ A lightweight Linux CLI system monitor + logger that prints CPU usage, RAM usage
   2. Enter the project folder:
      cd sysmon
 
-  3. Run it (you can sto any time with Ctrl+C):
+  3. Run it (you can stop any time with Ctrl+C):
 
      Prints one line every 2 seconds until you stop it:
      python3 sysmon.py
